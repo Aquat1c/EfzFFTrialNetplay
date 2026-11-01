@@ -1,0 +1,56 @@
+# CMake / MSVC build tree
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.user
+*.userosscache
+*.opensdf
+*.sdf
+ipch/
+x64/
+x86/
+Win32/
+[Dd]ebug/
+[Rr]elease/
+*.tlog/
+*.lastbuildstate
+*.recipe
+*.idb
+*.pdb
+*.ilk
+*.exp
+*.lib
+!**/third_party/**/*.lib
+
+# Compiled output (keep tracked only if you intentionally vendor DLLs)
+*.dll
+*.exe
+*.obj
+*.o
+*.a
+
+# Logs and local runtime artifacts (created beside EFZ.EXE when mod runs)
+trial_debug.log
+logs/
+trial_savestates/
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~

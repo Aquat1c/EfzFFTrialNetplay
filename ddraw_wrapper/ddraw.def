@@ -1,0 +1,20 @@
+; ddraw.def  –  Export table for the EFZ DirectDraw wrapper DLL
+; The DLL must be named "ddraw.dll" and placed next to the game EXE.
+
+LIBRARY ddraw
+
+EXPORTS
+    DirectDrawCreate          @1
+    DirectDrawCreateEx        @2
+    DirectDrawCreateClipper   @3
+    DirectDrawEnumerateA      @4
+    DirectDrawEnumerateW      @5
+    DirectDrawEnumerateExA    @6
+    DirectDrawEnumerateExW    @7
+    EFZDDRAW_RegisterOverlayCallback @8
+    EFZDX9_RegisterNetplayHudProvider @9
+    EFZDX9_RegisterOverlayProvider @10
+    EFZDX9_RegisterTrainingMenuBridge @11
+    EFZDDRAW_SetFrameLimit @12
+    DllCanUnloadNow           PRIVATE
+    DllGetClassObject         PRIVATE

@@ -1,0 +1,36 @@
+#include <windows.h>
+#include "../shared/trial_versions.h"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION TRIAL_NETPLAY_DLL_VERSION_COMMA
+ PRODUCTVERSION TRIAL_NETPLAY_DLL_VERSION_COMMA
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+ FILEFLAGS VS_FF_DEBUG
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "EFZ FF Netplay\0"
+            VALUE "FileDescription", "EFZ FF Netplay game module\0"
+            VALUE "FileVersion", TRIAL_NETPLAY_DLL_VERSION_TEXT "\0"
+            VALUE "InternalName", "netplay\0"
+            VALUE "OriginalFilename", "netplay.dll\0"
+            VALUE "ProductName", "EFZ FF Netplay\0"
+            VALUE "ProductVersion", TRIAL_NETPLAY_DLL_VERSION_TEXT "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

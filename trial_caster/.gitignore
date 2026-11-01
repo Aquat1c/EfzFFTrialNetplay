@@ -1,0 +1,7 @@
+build/
+*.user
+*.suo
+.vs/
+trial_launcher.ini
+trial_caster.ini
+logs/

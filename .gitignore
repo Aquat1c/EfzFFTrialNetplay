@@ -1,0 +1,83 @@
+# Build output
+**/build/
+**/build-*/
+**/build_*/
+**/cmake-build-*/
+out/
+dist/
+
+# CMake / CTest
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+CPackConfig.cmake
+CPackSourceConfig.cmake
+Testing/
+_deps/
+compile_commands.json
+
+# Compiler and linker intermediates
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+*.idb
+*.iobj
+*.ipdb
+*.pch
+*.ipch
+*.tlog
+*.res
+*.aps
+
+# Local game folder and runtime state
+/game/
+logs/
+*.log
+*.dmp
+*.mdmp
+*.thvs
+trial_savestates/
+trial_launcher.ini
+trial_caster.ini
+trial_caster_session.ini
+harness_session_*.ini
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# Documentation policy
+*.md
+!README.md
+!docs/
+docs/*
+!docs/HOW_IT_WORKS.md
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+CMakeSettings.json
+CMakeUserPresets.json
+imgui.ini
+
+# Tool caches and temporary files
+__pycache__/
+*.tmp
+*.bak
+*.orig
+*.swp
+*~
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+*.lnk

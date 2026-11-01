@@ -1,0 +1,39 @@
+#include <windows.h>
+#include "../shared/trial_versions.h"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION TRIAL_LAUNCHER_VERSION_COMMA
+ PRODUCTVERSION TRIAL_LAUNCHER_VERSION_COMMA
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+ FILEFLAGS VS_FF_DEBUG
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "EFZ FF Netplay\0"
+            VALUE "FileDescription", "EFZ FF Netplay launcher\0"
+            VALUE "FileVersion", TRIAL_LAUNCHER_VERSION_TEXT "\0"
+            VALUE "InternalName", "EFZ FF Netplay\0"
+            VALUE "OriginalFilename", "EFZ FF Netplay.exe\0"
+            VALUE "ProductName", "EFZ FF Netplay\0"
+            VALUE "ProductVersion", TRIAL_LAUNCHER_VERSION_TEXT "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
+
+TRIALBANNER RCDATA "..\\assets\\banner.png"
+TRIALFONT RCDATA "..\\assets\\ITC Bolt Bold Regular.otf"

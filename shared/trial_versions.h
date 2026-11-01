@@ -1,0 +1,46 @@
+#pragma once
+
+#define TRIAL_LAUNCHER_VERSION_MAJOR 1
+#define TRIAL_LAUNCHER_VERSION_MINOR 14
+#define TRIAL_LAUNCHER_VERSION_PATCH 0
+#define TRIAL_LAUNCHER_VERSION_BUILD 0
+#define TRIAL_LAUNCHER_VERSION_COMMA 1, 14, 0, 0
+#define TRIAL_LAUNCHER_VERSION_TEXT "1.14.0.0"
+
+#define TRIAL_NETPLAY_DLL_VERSION_MAJOR 1
+#define TRIAL_NETPLAY_DLL_VERSION_MINOR 14
+#define TRIAL_NETPLAY_DLL_VERSION_PATCH 0
+#define TRIAL_NETPLAY_DLL_VERSION_BUILD 0
+#define TRIAL_NETPLAY_DLL_VERSION_COMMA 1, 14, 0, 0
+#define TRIAL_NETPLAY_DLL_VERSION_TEXT "1.14.0.0"
+
+#ifdef __cplusplus
+
+#include <cstdint>
+
+namespace trialnet::version
+{
+
+struct Version
+{
+    std::uint16_t major;
+    std::uint16_t minor;
+    std::uint16_t patch;
+    std::uint16_t build;
+};
+
+constexpr Version kLauncher{
+    TRIAL_LAUNCHER_VERSION_MAJOR,
+    TRIAL_LAUNCHER_VERSION_MINOR,
+    TRIAL_LAUNCHER_VERSION_PATCH,
+    TRIAL_LAUNCHER_VERSION_BUILD};
+
+constexpr Version kNetplayDll{
+    TRIAL_NETPLAY_DLL_VERSION_MAJOR,
+    TRIAL_NETPLAY_DLL_VERSION_MINOR,
+    TRIAL_NETPLAY_DLL_VERSION_PATCH,
+    TRIAL_NETPLAY_DLL_VERSION_BUILD};
+
+}
+
+#endif
